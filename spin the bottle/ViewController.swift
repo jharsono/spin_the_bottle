@@ -29,7 +29,9 @@ import CoreMotion
 import AVFoundation
 import AudioToolbox
 
+
 class ViewController: UIViewController {
+
     //playing audio
     var player: AVAudioPlayer?
     //call this function when you need to play the sound OR everything after the declaration can be pasted in the IBAction
@@ -54,7 +56,9 @@ class ViewController: UIViewController {
     let opQueue = OperationQueue() // a queue that regulates the execution of a set of operations
    
     
+
     override func viewDidLoad() {
+        updateUI()
         super.viewDidLoad()
         
         if motionManager.isDeviceMotionAvailable { //if the device detects motion when loaded
@@ -71,6 +75,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
     
     func startReadingMotionData() {
         // set read speed
@@ -97,4 +103,5 @@ class ViewController: UIViewController {
         return 180/Double.pi * radians
     }
     
+
 }
