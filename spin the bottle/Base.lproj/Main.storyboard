@@ -24,14 +24,51 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floor2" translatesAutoresizingMaskIntoConstraints="NO" id="Z9Z-Pr-HYr">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cxB-G8-duX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="TeW-xP-gzn"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6o8-41-EXF">
+                                        <rect key="frame" x="0.0" y="200" width="414" height="516"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPIN THE BOTTLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVM-NE-Ph3">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="52.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <color key="textColor" red="0.96752537084389356" green="0.98692421771912153" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottle" translatesAutoresizingMaskIntoConstraints="NO" id="6vu-KO-hCY">
+                                        <rect key="frame" x="0.0" y="250" width="414" height="416"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="mVM-NE-Ph3" firstAttribute="centerX" secondItem="G8a-iZ-h7o" secondAttribute="centerX" id="0hQ-8u-VYY"/>
                                     <constraint firstItem="Z9Z-Pr-HYr" firstAttribute="top" secondItem="G8a-iZ-h7o" secondAttribute="top" id="1mZ-69-L3g"/>
+                                    <constraint firstItem="6vu-KO-hCY" firstAttribute="top" secondItem="cxB-G8-duX" secondAttribute="bottom" constant="50" id="34k-lb-Vq3"/>
+                                    <constraint firstAttribute="trailing" secondItem="mVM-NE-Ph3" secondAttribute="trailing" id="4Bq-ch-ktY"/>
+                                    <constraint firstItem="mVM-NE-Ph3" firstAttribute="top" secondItem="G8a-iZ-h7o" secondAttribute="top" constant="60" id="52P-hC-Hck"/>
                                     <constraint firstItem="Z9Z-Pr-HYr" firstAttribute="centerX" secondItem="G8a-iZ-h7o" secondAttribute="centerX" id="9YH-tP-4DJ"/>
+                                    <constraint firstItem="6o8-41-EXF" firstAttribute="leading" secondItem="G8a-iZ-h7o" secondAttribute="leading" id="BtG-pk-3Ta"/>
+                                    <constraint firstItem="cxB-G8-duX" firstAttribute="leading" secondItem="G8a-iZ-h7o" secondAttribute="leading" id="CCQ-9U-hfV"/>
+                                    <constraint firstAttribute="bottom" secondItem="6vu-KO-hCY" secondAttribute="bottom" constant="50" id="L2X-AZ-Uxm"/>
+                                    <constraint firstAttribute="trailing" secondItem="cxB-G8-duX" secondAttribute="trailing" id="RXq-HH-KsZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="6o8-41-EXF" secondAttribute="bottom" id="Uex-dG-HDy"/>
                                     <constraint firstAttribute="bottom" secondItem="Z9Z-Pr-HYr" secondAttribute="bottom" id="Wzf-zO-MR1"/>
+                                    <constraint firstItem="6o8-41-EXF" firstAttribute="centerX" secondItem="G8a-iZ-h7o" secondAttribute="centerX" id="YZt-iK-c96"/>
+                                    <constraint firstItem="cxB-G8-duX" firstAttribute="centerX" secondItem="G8a-iZ-h7o" secondAttribute="centerX" id="c3c-ET-HOr"/>
+                                    <constraint firstItem="6vu-KO-hCY" firstAttribute="centerX" secondItem="G8a-iZ-h7o" secondAttribute="centerX" id="cil-RO-Dmh"/>
+                                    <constraint firstItem="6o8-41-EXF" firstAttribute="top" secondItem="cxB-G8-duX" secondAttribute="bottom" id="gPb-4X-8zC"/>
                                     <constraint firstItem="Z9Z-Pr-HYr" firstAttribute="leading" secondItem="G8a-iZ-h7o" secondAttribute="leading" id="hiK-nR-9qp"/>
+                                    <constraint firstItem="mVM-NE-Ph3" firstAttribute="leading" secondItem="G8a-iZ-h7o" secondAttribute="leading" id="j5t-ng-Esk"/>
+                                    <constraint firstAttribute="trailing" secondItem="6vu-KO-hCY" secondAttribute="trailing" id="kat-ie-A0O"/>
                                     <constraint firstAttribute="trailing" secondItem="Z9Z-Pr-HYr" secondAttribute="trailing" id="lbK-ih-X7D"/>
+                                    <constraint firstAttribute="bottom" secondItem="6o8-41-EXF" secondAttribute="bottom" id="lkY-qO-I1A"/>
+                                    <constraint firstItem="6vu-KO-hCY" firstAttribute="leading" secondItem="G8a-iZ-h7o" secondAttribute="leading" id="nvI-lK-e4E"/>
+                                    <constraint firstItem="cxB-G8-duX" firstAttribute="top" secondItem="G8a-iZ-h7o" secondAttribute="top" id="u6z-HN-9LO"/>
+                                    <constraint firstAttribute="trailing" secondItem="6o8-41-EXF" secondAttribute="trailing" id="uOl-m9-Ov1"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -52,6 +89,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bottle" width="2200" height="2879"/>
         <image name="floor2" width="1600" height="1200"/>
     </resources>
 </document>

@@ -58,7 +58,6 @@ class ViewController: UIViewController {
     
 
     override func viewDidLoad() {
-        updateUI()
         super.viewDidLoad()
         
         if motionManager.isDeviceMotionAvailable { //if the device detects motion when loaded
