@@ -25,22 +25,13 @@
 // two settings 13 below, 13 above
 
 import UIKit
-<<<<<<< Updated upstream
 import CoreMotion
-
-class ViewController: UIViewController {
-    
-    var motionManager = CMMotionManager() // starts the services that report movement detected by the device's onboard sensors. Four types of motion data, interested in two: [Accelerometer Data,and Device-motion Data]
-    let opQueue = OperationQueue() // a queue that regulates the execution of a set of operations
-=======
 import AVFoundation
 import AudioToolbox
 
 class ViewController: UIViewController {
-    
     //playing audio
     var player: AVAudioPlayer?
-    
     //call this function when you need to play the sound OR everything after the declaration can be pasted in the IBAction
     func playSound() {
         let url = Bundle.main.url(forResource: "spin", withExtension: "m4a")!
@@ -56,15 +47,16 @@ class ViewController: UIViewController {
             print(error)
         }
         
-        
     }
     
->>>>>>> Stashed changes
+    
+    var motionManager = CMMotionManager() // starts the services that report movement detected by the device's onboard sensors. Four types of motion data, interested in two: [Accelerometer Data,and Device-motion Data]
+    let opQueue = OperationQueue() // a queue that regulates the execution of a set of operations
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-<<<<<<< Updated upstream
         if motionManager.isDeviceMotionAvailable { //if the device detects motion when loaded
             print("We can detect device motion")
             startReadingMotionData()
@@ -72,11 +64,7 @@ class ViewController: UIViewController {
         else { //if the device doesn't detect motion when loaded
             print("We cannot detect device motion")
         }
-=======
-    //remove this when you are adding the sound to the spinning
-        playSound()
         // Do any additional setup after loading the view, typically from a nib.
->>>>>>> Stashed changes
     }
     
     override func didReceiveMemoryWarning() {
@@ -97,9 +85,9 @@ class ViewController: UIViewController {
                 //                print("pitch", self.degrees(mydata.attitude.pitch))
                 
                 if mydata.rotationRate.z > 5 {
-                    print("WE SPINNINININNINININGGGGG") //insert sound here
+                    print("WE SPINNINININNINININGGGGG")
+                    self.playSound()
                 }
-                
             }
         }
     }
