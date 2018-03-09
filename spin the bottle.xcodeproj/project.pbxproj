@@ -12,6 +12,7 @@
 		6F12B2E92051F95400263A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F12B2E72051F95400263A09 /* Main.storyboard */; };
 		6F12B2EB2051F95400263A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F12B2EA2051F95400263A09 /* Assets.xcassets */; };
 		6F12B2EE2051F95400263A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F12B2EC2051F95400263A09 /* LaunchScreen.storyboard */; };
+		6F12B2F92052076F00263A09 /* spin.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6F12B2F82052076F00263A09 /* spin.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6F12B2EA2051F95400263A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F12B2ED2051F95400263A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F12B2EF2051F95400263A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F12B2F82052076F00263A09 /* spin.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = spin.m4a; path = "spin the bottle/sounds/spin.m4a"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		6F12B2E22051F95400263A09 /* spin the bottle */ = {
 			isa = PBXGroup;
 			children = (
+				6F12B2F72052075F00263A09 /* sounds */,
 				6F12B2E32051F95400263A09 /* AppDelegate.swift */,
 				6F12B2E52051F95400263A09 /* ViewController.swift */,
 				6F12B2E72051F95400263A09 /* Main.storyboard */,
@@ -62,6 +65,15 @@
 				6F12B2EF2051F95400263A09 /* Info.plist */,
 			);
 			path = "spin the bottle";
+			sourceTree = "<group>";
+		};
+		6F12B2F72052075F00263A09 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6F12B2F82052076F00263A09 /* spin.m4a */,
+			);
+			name = sounds;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +137,7 @@
 			files = (
 				6F12B2EE2051F95400263A09 /* LaunchScreen.storyboard in Resources */,
 				6F12B2EB2051F95400263A09 /* Assets.xcassets in Resources */,
+				6F12B2F92052076F00263A09 /* spin.m4a in Resources */,
 				6F12B2E92051F95400263A09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
